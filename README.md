@@ -2,7 +2,7 @@
 
 - 시스템에 `docker`, `docker-compose`가 설치된 것으로 가정합니다.
 
-# 구성 container
+### 이미지
 - django 
 - pgadmin
 - postgresql
@@ -23,21 +23,21 @@ DATABASES = {
 }
 ```
 
-## Usage
+## 사용법
 
-- repository clone
+- 저장소 클론
 ```
 git clone https://github.com/ithingv/django_boilerplate.git
 
 cd django_boilerplate
 ```
 
-- 도커 빌드 및 실행
-```
-docker-compose up -d
-```
+- 도커컴포즈 빌드 및 실행
 
 ```
+docker-compose up --build
+```
+
 - 컨테이너 쉘 실행
 ```
 docker exec -it [container_name] bash
